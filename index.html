@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<!-- import jquery -->
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<!-- import custom stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title>Game</title>
+</head>
+
+<body>
+
+	<h1>Hangman</h1>
+
+	<form action="" name="f">
+
+		<section class="score">
+			<label>Score :</label>
+			<input type=text name="score" value="0" onfocus="score.blur();" size=2>
+		</section>
+		<section class="fails">
+			<label>Fails:</label>
+			<input type=text name="lives" value="0" onfocus="lives.blur();" size=2>
+		</section>
+
+		<section class="wordhangman">
+			<input type=text name="word" value="" onfocus="word.blur();" size=50>
+		</section>
+		<section class="triedword">
+			<input type=text name="tried" value="Click GO to get a word." onfocus="tried.blur();" size=50>
+		</section>
+		<section class="go">
+			<input type=button onclick="new_word(this.form);" value=" GO ">
+		</section>
+		<section class="firstletters">
+			<input type=button value=" A " onclick="seek('A');">
+			<input type=button value=" B " onclick="seek('B');">
+			<input type=button value=" C " onclick="seek('C');">
+			<input type=button value=" D " onclick="seek('D');">
+			<input type=button value=" E " onclick="seek('E');">
+			<input type=button value=" F " onclick="seek('F');">
+			<input type=button value=" G " onclick="seek('G');">
+			<input type=button value=" H " onclick="seek('H');">
+			<input type=button value=" I   " onclick="seek('I');">
+			<input type=button value=" J  " onclick="seek('J');">
+			<input type=button value=" K " onclick="seek('K');">
+			<input type=button value=" L  " onclick="seek('L');">
+			<input type=button value=" M " onclick="seek('M');">
+		</section>
+		<section class="secondletters">
+			<input type=button value=" N " onclick="seek('N');">
+			<input type=button value=" O " onclick="seek('O');">
+			<input type=button value=" P " onclick="seek('P');">
+			<input type=button value=" Q " onclick="seek('Q');">
+			<input type=button value=" R " onclick="seek('R');">
+			<input type=button value=" S " onclick="seek('S');">
+			<input type=button value=" T " onclick="seek('T');">
+			<input type=button value=" U " onclick="seek('U');">
+			<input type=button value=" V " onclick="seek('V');">
+			<input type=button value=" W " onclick="seek('W');">
+			<input type=button value=" X  " onclick="seek('X');">
+			<input type=button value=" Y " onclick="seek('Y');">
+			<input type=button value=" Z  " onclick="seek('Z');">
+		</section>
+	</form>
+
+
+	<script src="assets/js/script.js"></script>
+</body>
+
+</html>

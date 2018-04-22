@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.1em;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+}
+
+body{
+    background: bisque;
+}
+
+form{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 5vh;
+    padding: 10vh;
+    grid-template-areas: 
+    "score fails"
+    "word word"
+    "tried tried"
+    "go go"
+    "firstletters firstletters"
+    "secondletters secondletters";
+}
+
+section.score{
+    grid-area: score;
+    display: grid;
+    justify-items: center;
+    align-items: center; 
+}
+
+section.fails{
+    grid-area: fails;
+    display: grid;
+    justify-items: center;
+    align-items: center; 
+}
+
+section.wordhangman{
+    grid-area: word;
+}
+
+section.triedword{
+    grid-area: tried;
+}
+
+section.go{
+    grid-area: go;
+    display: grid;
+    justify-items: center;
+    align-items: center; 
+}
+
+section.firstletters{
+    grid-area: firstletters;
+}
+
+section.secondletters{
+    grid-area: secondletters;
+}
+
+input[type="text"]{
+    height: 10vh;
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input[type="button"]{
+    padding: 1vh;
+    border-radius: 50%;
+    box-shadow: 1px 2px 2px 2px rgba(117, 126, 118, 0.5);
+    cursor: pointer;
+}
+
